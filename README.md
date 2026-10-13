@@ -22,7 +22,15 @@ npm test
 
 `index.html`、`style.css` 和 `app.js` 可直接部署到静态托管平台，路径使用相对地址，适用于 GitHub Pages 的项目子路径。也可以运行自带 Node.js 服务。
 
-本仓库不自动配置 GitHub Pages。推送代码和发布可公开访问的网站是两个独立操作。
+### GitHub Pages
+
+仓库包含 `.github/workflows/pages.yml`：推送到 `main` 后运行测试，再发布三个静态文件。服务器源码、测试和其他仓库文件不会包含在站点产物中。
+
+首次部署时，在仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。然后在 **Actions → Deploy cloud native guide to GitHub Pages → Run workflow** 中启动工作流（或再次推送到 `main`）。部署成功后的站点地址为：
+
+https://swxfll.github.io/chatgpt/
+
+此地址仅在 Pages 启用且工作流部署成功后可用。若仓库计划或权限不支持 Pages，需要在 GitHub 设置中处理；推送工作流本身不代表部署已经成功。
 
 ## 内容边界
 
