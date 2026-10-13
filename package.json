@@ -1,0 +1,11 @@
+{
+  "name": "cloud-native-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "中文云原生交互学习指南",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}
