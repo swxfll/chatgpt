@@ -1,4 +1,4 @@
-name: Deploy cloud native guide to GitHub Pages
+name: Deploy Afterlight to GitHub Pages
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site
-          cp index.html style.css app.js _site/
+          cp index.html style.css app.js saturn.webp _site/
           touch _site/.nojekyll
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3

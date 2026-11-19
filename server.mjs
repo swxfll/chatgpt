@@ -7,6 +7,7 @@ const assets = new Map([
   ['/index.html', ['index.html', 'text/html; charset=utf-8']],
   ['/style.css', ['style.css', 'text/css; charset=utf-8']],
   ['/app.js', ['app.js', 'text/javascript; charset=utf-8']],
+  ['/saturn.webp', ['saturn.webp', 'image/webp']],
 ]);
 
 export function createApp() {
@@ -35,6 +36,6 @@ export function createApp() {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const port = Number(process.env.PORT || 3000);
   createApp().listen(port, process.env.HOST || '0.0.0.0', () => {
-    console.log(`Cloud Native Guide listening on port ${port}`);
+    console.log(`Afterlight listening on port ${port}`);
   });
 }
